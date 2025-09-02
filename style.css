@@ -1,0 +1,280 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f172a;
+  color: #f8fafc;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1e293b;
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+nav h1 {
+  font-size: 24px;
+  color: #38bdf8;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+nav ul li a {
+  color: #f1f5f9;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #38bdf8;
+}
+
+#hero {
+  padding: 100px 20px;
+  text-align: center;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+}
+
+#hero h2 {
+  font-size: 36px;
+  margin-bottom: 10px;
+  color: #38bdf8;
+}
+
+#hero p {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+
+.btn {
+  padding: 10px 25px;
+  background-color: #38bdf8;
+  color: #0f172a;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #38bdf8;
+  display: inline-block;
+}
+
+.skills-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.skills-box {
+  flex: 1 1 250px;
+  background: linear-gradient(to bottom, #581c87, #fce7f3);
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px #0ea5e9;
+  transition: transform 0.3s ease;
+}
+
+.skills-box:hover {
+  transform: translateY(-5px);
+}
+
+.skills-box h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.skills-box ul {
+  list-style: none;
+  text-align: center;
+  color: black;
+}
+
+.skills-box ul li {
+  margin: 8px 0;
+  font-weight: 500;
+}
+
+#about img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px #0ea5e9;
+}
+
+.project,
+.experience,
+.certification,
+.achievement {
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 10px rgba(14, 165, 233, 0.2);
+}
+
+.project h3,
+.experience h3,
+.certification h3,
+.achievement h3 {
+  color: #38bdf8;
+}
+
+#contact a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e293b;
+  color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
+/* Another one */
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #fdf4ff;
+  color: #1e1e2f;
+}
+
+section#projects {
+  padding: 50px 20px;
+  background-color: #fce7f3;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #581c87;
+  margin-bottom: 40px;
+}
+
+.skills-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.skills-box {
+  background-color: #ffffff;
+  border: 2px solid #c084fc;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  transition: transform 0.3s ease;
+}
+
+.skills-box:hover {
+  transform: translateY(-5px);
+}
+
+.skills-box img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.skills-box h3 {
+  margin-top: 0;
+  color: #6b21a8;
+}
+
+.skills-box p {
+  font-size: 0.95rem;
+  color: #4b5563;
+}
+
+.skills-box span {
+  display: inline-block;
+  background-color: #e9d5ff;
+  color: #4c1d95;
+  padding: 5px 10px;
+  margin: 5px 5px 0 0;
+  border-radius: 8px;
+  font-size: 0.8rem;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #9333ea;
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #6b21a8;
+}
+
+.cert_hov{
+  transition: transform 0.3s ease;
+}
+
+.cert_hov:hover{
+  transform: translateY(-5px);
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+section {
+  scroll-margin-top: 80px; 
+}

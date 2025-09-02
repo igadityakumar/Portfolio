@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditya | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <h1>ADITYA</h1>
+      <ul>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="home" style="padding: 50px 20px;">
+    <div
+      style="display: flex; align-items: center; flex-wrap: wrap; justify-content: center; gap: 40px; flex-direction: row-reverse;">
+
+      <!-- 👤 Profile Photo -->
+      <div style="flex-shrink: 0; width: 500px; display: flex; justify-content: center; align-items: center;">
+        <img src="PHOTO P.jpg" alt="aadi"
+          style="width: 250px; height: 250px; border-radius: 50%; object-fit: cover; box-shadow: 0 0 10px #0ea5e9;">
+      </div>
+
+      <!-- 📄 Text and Buttons -->
+      <div style="max-width: 600px;">
+        <h2 style="font-size: 2.5rem; color: #6b21a8; margin-bottom: 10px;">Aditya Kumar</h2>
+        <div class="typing" id="typingText"
+          style="font-size: 1.2rem; font-weight: bold; color: #0f172a; margin-bottom: 15px; min-height: 32px;">
+        </div>
+
+        <p style="margin-bottom: 20px; color: #333;">
+          Coding your vision – one line at a time.<br>
+          I blend creativity with technology to turn ideas into impactful solutions.
+        </p>
+
+        <a href="#contact" class="btn" style="
+        display: inline-block;
+        padding: 12px 24px;
+        background-color: #9333ea;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: bold;
+        margin-right: 15px;
+      ">
+          Hire Me
+        </a>
+
+        <a href="https://drive.google.com/file/d/1vFmcstJ8N0LcWGo1w-6acjz1C14R3iot/view?usp=drivesdk" download style="
+          display: inline-block;
+          padding: 12px 24px;
+          background-color: #581c87;
+          color: white;
+          border: none;
+          border-radius: 8px;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: bold;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          transition: background-color 0.3s ease;
+        " onmouseover="this.style.backgroundColor='#0369a1'" onmouseout="this.style.backgroundColor='#0ea5e9'">
+          📄 Download Resume
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div
+      style="display: flex; flex-wrap: wrap; border-radius: 15px; overflow: hidden; box-shadow: 0 0 10px #0ea5e9; margin-top: 30px;">
+      <div
+        style="flex: 1 1 200px; background: linear-gradient(to bottom, #581c87, #1e293b); padding: 20px; color: #e0e7ff;">
+        <p style="margin-bottom: 15px; font-weight: bold; color: #c084fc; cursor: pointer;"
+          onclick="showAboutTab('summary')">Quick Summary</p>
+        <p style="margin-bottom: 15px; font-weight: bold; color: white; cursor: pointer;"
+          onclick="showAboutTab('professional')">Professional Journey</p>
+        <p style="margin-bottom: 0px; font-weight: bold; color: white; cursor: pointer;"
+          onclick="showAboutTab('academic')">Academic Background</p>
+      </div>
+      <div id="about-summary" class="about-tab"
+        style="flex: 3 1 500px; background-color: #fce7f3; color: black; padding: 20px; display: block;">
+
+        <p style="font-weight: 400; font-style:italic;">I’m a dedicated backend developer with a passion for building
+          efficient, scalable, and reliable
+          applications.
+          My coding journey began in college, where I discovered the thrill of solving real-world problems through
+          logic and clean code.
+
+          With a strong grasp of core computer science concepts and hands-on experience in Java, Spring Boot,
+          PostgreSQL, and AWS, I aim to deliver software that’s both impactful and maintainable.
+
+          I enjoy tackling complex challenges in data structures and algorithms, building robust APIs, and exploring
+          the world of cloud computing.
+
+          When I’m not coding, you’ll find me experimenting with new technologies, learning system design, or
+          competing in coding challenges. I'm always eager to improve — as a developer and as a person.
+        </p>
+
+      </div>
+      <div id="about-professional" class="about-tab"
+        style="flex: 3 1 500px; background-color: #fce7f3; color: black; padding: 20px; display: none;">
+        <p><strong>★ Java Developer Intern</strong><br>
+          → Softpro India Lucknow<br>
+          → August 2024 - September 2024
+        </p>
+        <br>
+        <p><strong>★ Learnovote Enterprises</strong><br>
+          → AWS <br>
+          → July 2025 - August 2025</p>
+        <br>
+        <p><strong>★ IIC Convener</strong><br>
+          → IIC <br>
+          → January 2024 - January 2025</p>
+      </div>
+      <div id="about-academic" class="about-tab"
+        style="flex: 3 1 500px; background-color: #fce7f3; color: black; padding: 20px; display: none;">
+        <p><strong>★ Babu Banarasi Das University</strong><br>
+          → Bachelor of Technology<br>
+          → Computer Science Engineering | 2022 - 2026 | Percentage: 72</p>
+        <br>
+        <p><strong>★ MHK College Champaran</strong><br>
+          → Intermediate<br>
+          → PCM | 2022 | Percentage: 61</p>
+        <br>
+        <p><strong>★ PTJLN High School</strong><br>
+          → High School<br>
+          → 2020 | Percentage: 74</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-boxes">
+      <div class="skills-box">
+        <h3 style="color: white;">Developer</h3>
+        <ul>
+          <li>HTML 5</li>
+          <li>CSS 3</li>
+          <li>Springboot</li>
+          <li>AWS</li>
+        </ul>
+      </div>
+      <div class="skills-box">
+        <h3 style="color: white;">Programmer</h3>
+        <ul>
+          <li>Java</li>
+          <li>C</li>
+          <li>DSA</li>
+          <li>PSQL</li>
+        </ul>
+      </div>
+      <div class="skills-box">
+        <h3 style="color: white;">Toolkit</h3>
+        <ul>
+          <li>Canva</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Intellij IDEA</li>
+          <li>VS Code</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- (unchanged sections omitted for brevity) -->
+
+  <section id="projects" style="background-color: #fdf4ff;">
+    <h2>Projects</h2>
+    <div class="skills-boxes">
+      <div class="skills-box">
+        <a href="https://github.com/igadityakumar" target="_blank"><img src="images.jpeg"
+            alt="Portfolio Screenshot"></a>
+        <h3>My Personal Portfolio</h3>
+        <p>Developed a responsive personal portfolio using HTML and CSS to highlight my skills, projects, achievements, and contact details professionally.</p>
+        <div>
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>JavaScript</span>
+        </div>
+      </div>
+      <div class="skills-box">
+        <a href="https://github.com/igadityakumar" target="_blank">
+          <img src="blinkit dashboard.webp" alt="Blinkit Dashboard Screenshot"></a>
+        <h3>Blinkit Dashboard Clone</h3>
+        <p>Created a Blinkit-style analytics dashboard in Power BI with SQL-backed data for sales, users, and orders
+        </p>
+        <div>
+          <span>Power BI</span>
+          <span>MySQL</span>
+          <span>DAX</span>
+          <span>Excel</span>
+        </div>
+      </div>
+      <div class="skills-box">
+        <a href="https://github.com/igadityakumar" target="_blank">
+          <img src="authincator.png" alt="Authentication System Screenshot"></a>
+        <h3>Authentication & Role-Based Access System</h3>
+        <p>Developed a secure authentication system with role-based access control using Spring Boot and JWT.</p>
+        <div>
+          <span>Spring Boot</span>
+          <span>Spring Security</span>
+          <span>JWT</span>
+          <span>MySQL</span>
+          <span>Swagger</span>
+        </div>
+      </div>
+    </div>
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="https://github.com/igadityakumar" target="_blank" class="btn">Explore My Projects</a>
+    </div>
+  </section>
+
+  <section id="certifications" style="padding: 60px 20px; background-color: #fdf4ff;">
+    <h2 style="text-align: center; font-size: 2.5rem; color: #4b1d68; margin-bottom: 40px;">Certifications</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px;">
+
+      <!-- Certificate 1 -->
+      <div class="cert_hov"
+        style="width: 320px; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: white;">
+        <a href="https://drive.google.com/file/d/1TqPn3c8Jnkq8-jH8gt_CMg-YdDtIp5Gh/view?usp=drivesdk" target="_blank">
+          <img src="meta.png" alt="Certificate 1" style="width: 100%; height: auto; display: block;">
+        </a>
+        <div style="padding: 16px;">
+          <h3 style="margin: 0 0 8px 0; color: #1f2937;">Meta</h3>
+          <p style="margin: 0; color: #555;">Course: HTML and CSS in depth</p>
+        </div>
+      </div>
+
+      <!-- Certificate 2 -->
+      <div class="cert_hov"
+        style="width: 320px; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: white;">
+        <a href="https://drive.google.com/file/d/1TpWBMgfiP2ErXN9BueAyXNSP_oiKB_-w/view?usp=drivesdk" target="_blank">
+          <img src="operating system.png" alt="Certificate 2" style="width: 100%; height: auto; display: block;">
+        </a>
+        <div style="padding: 16px;">
+          <h3 style="margin: 0 0 8px 0; color: #1f2937;">Microsoft</h3>
+          <p style="margin: 0; color: #555;">Course: Introduction to Computers and Opearting System and Security</p>
+        </div>
+      </div>
+
+      <!-- Certificate 3 -->
+      <div class="cert_hov"
+        style="width: 320px; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: white;">
+        <a href="https://drive.google.com/file/d/1TrE6LO6oPAgQFirAEaZDSt7a7rEP5ht0/view?usp=drivesdk" target="_blank">
+          <img src="sql.png" alt="Certificate 3" style="width: 100%; height: auto; display: block;">
+        </a>
+        <div style="padding: 16px;">
+          <h3 style="margin: 0 0 8px 0; color: #1f2937;">IBM</h3>
+          <p style="margin: 0; color: #555;">SQL and Relational Databases 101</p>
+        </div>
+      </div>
+
+
+      <div class="cert_hov"
+        style="width: 320px; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: white;">
+        <a href="https://drive.google.com/file/d/1TuhZeqfQfwRogirlG97ngcTp8lDVM034/view" target="_blank">
+          <img src="aws.png" alt="Certificate 3" style="width: 100%; height: auto; display: block;">
+        </a>
+        <div style="padding: 16px;">
+          <h3 style="margin: 0 0 8px 0; color: #1f2937;">GeeksforGeeks</h3>
+          <p style="margin: 0; color: #555;">AWS</p>
+        </div>
+      </div>
+
+      <div class="cert_hov"
+        style="width: 320px; border-radius: 16px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); background-color: white;">
+        <a href="https://drive.google.com/file/d/1Trwq7h3dxen9MYBJZPAaMvB_QnafYNd5/view?usp=drivesdk" target="_blank">
+          <img src="Accenture.png" alt="Certificate 3" style="width: 100%; height: auto; display: block;">
+        </a>
+        <div style="padding: 16px;">
+          <h3 style="margin: 0 0 8px 0; color: #1f2937;">Accenture</h3>
+          <p style="margin: 0; color: #555;">Developer job Simulation</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements -->
+  <section id="achievements" style="padding: 40px 20px; background-color: #fdf4ff">
+    <h2 style="font-size: 2.5rem; text-align: center; margin-bottom: 30px;">Achievements</h2>
+
+    <ul style="list-style: none; padding: 0; max-width: 950px; margin: 0 auto;">
+      <li class="cert_hov"
+        style="background: #ffffff; padding: 20px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);">
+        🏆Participated in Arjuna 1.0 organized by the Civil Innovation and Technology Cell, NIT Agartala.
+      </li>
+      <li class="cert_hov"
+        style="background: #ffffff; padding: 20px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);">
+        Qualified TCS CodeVita Round 1 with an global Rank of 700.
+      </li>
+      <li class="cert_hov"
+        style="background: #ffffff; padding: 20px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);">
+        🎯 Solved 100+ DSA problems across platforms like LeetCode, GFG, HackerRank
+      </li>
+      <li class="cert_hov"
+        style="background: #ffffff; padding: 20px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);">
+        🎯 HackerRank 5-Star Coder in Problem Solving
+        Recognized for exceptional problem-solving abilities with a 5-star rating on HackerRank, reflecting strong
+        command over algorithms and data structures.
+      </li>
+      <li class="cert_hov"
+        style="background: #ffffff; padding: 20px; border-radius: 12px; margin-bottom: 15px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);">
+        Meta Hacker Cup 2024 – Global Competitive Programming Contest by Meta (Facebook)
+        Achieved a global rank 1932 among thousand of Participants worldwide, demonstrating strong
+        algorithmic problem-solving and time-efficient coding skills under pressure.
+      </li>
+    </ul>
+  </section>
+
+  <!--contect me-->
+  <section id="contact" style="padding: 60px 20px; background-color: #fdf4ff; color: #1e1e2f;">
+    <h2 style="text-align: center; font-size: 2.5rem; color: #431407; margin-bottom: 40px;">Contact Me</h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: space-between; max-width: 1100px; margin: auto;">
+
+      <!-- Left Form -->
+     
+      <div style="flex: 1 1 45%; margin-bottom: 30px;">
+        <h3 style="color: #581c87;">Say Hello 😊</h3>
+        <form action="https://formspree.io/f/xrbaldlp" method="post">
+          <input type="text" placeholder="Your Name"
+            style="width: 100%; padding: 10px; margin-top: 10px; margin-bottom: 15px; border: none; border-bottom: 2px solid #ccc; background: transparent;">
+          <input type="email" placeholder="Your Email"
+            style="width: 100%; padding: 10px; margin-bottom: 15px; border: none; border-bottom: 2px solid #ccc; background: transparent;">
+          <textarea placeholder="Your Message" rows="4"
+            style="width: 100%; padding: 10px; border: none; border-bottom: 2px solid #ccc; background: transparent;"></textarea>
+          <button type="submit"
+            style="margin-top: 15px; padding: 10px 20px; background-color: #581c87; color: white; border: none; border-radius: 6px; cursor: pointer;">Send
+            Message
+          </button>
+        </form>
+        <p style="margin-top: 10px; font-style: italic; color: #333;">
+          Or feel free to reach out through my socials - <strong>I’d love to connect!</strong>
+        </p>
+      </div>
+      
+      <!-- Right Social Links -->
+      <div style="flex: 1 1 45%; display: flex; flex-direction: column; gap: 15px; margin-left: 100px;">
+
+        <a href="https://www.linkedin.com/in/aditya-kumar-7834a9253/" target="_blank" style="text-decoration: none;">
+          <div style="background-color: #fce7f3; padding: 16px; border-radius: 10px; color: #1e1e2f;">
+            <strong>LinkedIn</strong><br><span>@adityakumar</span>
+          </div>
+        </a>
+
+        <a href="https://github.com/igadityakumar" target="_blank" style="text-decoration: none;">
+          <div style="background-color: #fce7f3; padding: 16px; border-radius: 10px; color: #1e1e2f;">
+            <strong>GitHub</strong><br><span>@igadityakumar</span>
+          </div>
+        </a>
+
+        <a href="https://x.com/ig_adityatiwari" target="_blank" style="text-decoration: none;">
+          <div style="background-color: #fce7f3; padding: 16px; border-radius: 10px; color: #1e1e2f;">
+            <strong>X</strong><br><span>@ig_adityatiwari</span>
+          </div>
+        </a>
+
+        <a href="https://www.instagram.com/ig_adityatiwari/?hl=en" target="_blank" style="text-decoration: none;">
+          <div style="background-color: #fce7f3; padding: 16px; border-radius: 10px; color: #1e1e2f;">
+            <strong>Instagram</strong><br><span>@ig_adityatiwari</span>
+          </div>
+        </a>
+
+        <a href="https://leetcode.com/u/igadityakumar/" target="_blank" style="text-decoration: none;">
+          <div style="background-color: #fce7f3; padding: 16px; border-radius: 10px; color: #1e1e2f;">
+            <strong>LeetCode</strong><br><span>@igadityakumar</span>
+          </div>
+        </a>
+
+        <a href="https://www.hackerrank.com/profile/adityakumar00261" target="_blank" style="text-decoration: none;">
+          <div style="background-color: #fce7f3; padding: 16px; border-radius: 10px; color: #1e1e2f;">
+            <strong>HackerRank</strong><br><span>@adityakumar00261</span>
+          </div>
+        </a>
+
+        <a href="mailto:adityakumar002624@gmail.com" target="_blank" style="text-decoration: none;">
+          <div style="background-color: #fce7f3; padding: 16px; border-radius: 10px; color: #1e1e2f;">
+            <strong>Email</strong><br><span>adityakumar002624@gmail.com</span>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <footer
+    style="width: 100%; background: linear-gradient(to right, #7e225c, #4b0144); color: white; padding: 40px 20px; text-align: center; border-top-left-radius: 15px; border-top-right-radius: 15px;">
+
+    <!-- Name & Tagline -->
+    <h1 style="color: #fb7185; font-size: 2.5rem; margin-bottom: 10px;">Aditya Kumar</h1>
+    <p style="font-size: 1.2rem; font-family: 'Georgia', serif; margin-bottom: 30px;">
+      Building solutions, one line at a time.
+    </p>
+
+    <!-- Navigation Links -->
+    <nav style="margin-bottom: 25px;">
+      <a href="#home" style="color: white; margin: 0 15px; font-weight: bold; text-decoration: none;">Home</a>
+      <a href="#about" style="color: white; margin: 0 15px; font-weight: bold; text-decoration: none;">About</a>
+      <a href="#skills" style="color: white; margin: 0 15px; font-weight: bold; text-decoration: none;">Skills</a>
+      <a href="#projects" style="color: white; margin: 0 15px; font-weight: bold; text-decoration: none;">Projects</a>
+      <a href="#certifications"
+        style="color: white; margin: 0 15px; font-weight: bold; text-decoration: none;">Certifications</a>
+      <a href="#contact" style="color: white; margin: 0 15px; font-weight: bold; text-decoration: none;">Contact</a>
+    </nav>
+
+    <!-- Copyright -->
+    <p style="margin-bottom: 5px;">© 2025 Aditya Kumar. All rights reserved.</p>
+    <p style="margin-bottom: 30px;">
+      <a href="#" style="color: white; text-decoration: underline;">Privacy Policy</a> |
+      <a href="#" style="color: white; text-decoration: underline;">Terms of Service</a>
+    </p>
+
+    <!-- Designer Credit -->
+    <p style="color: gold; font-weight: bold;">Designed with ❤️ by Aditya Kumar</p>
+
+  </footer>
+  </div>
+  </section>
+  <script src="app.js"></script>
+  <!-- (rest of the unchanged sections) -->
+</body>
+
+</html>
